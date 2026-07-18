@@ -1,0 +1,81 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "readable-id",
+  "title": "Readable ID",
+  "description": "Convert between UUIDs and Red Envelope readable IDs (pmt_…, pmq_…, …).",
+  "icon": "extension-icon.png",
+  "author": "sasha",
+  "license": "MIT",
+  "categories": ["Developer Tools"],
+  "commands": [
+    {
+      "name": "encode",
+      "title": "Encode UUID to Readable ID",
+      "subtitle": "Readable ID",
+      "description": "Turn a UUID plus an object type into its readable ID.",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "uuid",
+          "placeholder": "UUID",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "object",
+          "placeholder": "Type",
+          "type": "dropdown",
+          "required": true,
+          "data": [
+            { "title": "pmt — payment", "value": "payment" },
+            { "title": "pmq — paymentQuote", "value": "paymentQuote" },
+            { "title": "qte — quote", "value": "quote" },
+            { "title": "tde — trade", "value": "trade" },
+            { "title": "wtd — withdrawal", "value": "withdrawal" },
+            { "title": "dpt — deposit", "value": "deposit" },
+            { "title": "wac — withdrawalAccount", "value": "withdrawalAccount" },
+            { "title": "usr — user", "value": "user" },
+            { "title": "evt — event", "value": "event" },
+            { "title": "cpt — counterparty", "value": "counterparty" },
+            { "title": "cpa — counterpartyAddress", "value": "counterpartyAddress" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "decode",
+      "title": "Decode Readable ID to UUID",
+      "subtitle": "UUID",
+      "description": "Turn a readable ID back into its UUID. The type is resolved from the prefix.",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "readableId",
+          "placeholder": "e.g. pmt_3Qk8…",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.99.0",
+    "@raycast/utils": "^1.19.0",
+    "@redenvelopeorg/utils": "^1.105.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.0",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
