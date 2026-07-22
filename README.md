@@ -10,8 +10,10 @@ All encode/decode is delegated to the shared [`@redenvelopeorg/utils`](https://g
 | --- | --- | --- |
 | **Encode UUID to Readable ID** | a UUID + an object type (dropdown) | `prefix_base58` readable ID |
 | **Decode Readable ID to UUID** | a readable ID (`pmt_…`) | the UUID (type auto-resolved from the prefix) |
+| **Generate UUID V4** | — | a random UUID v4 |
+| **Generate UUID V7** | — | a time-ordered UUID v7 |
 
-Both open a small detail view, **auto-copy** the result to your clipboard, and confirm with a toast. Invalid input shows the codec's error message instead.
+All four open a small detail view, **auto-copy** the result to your clipboard, and confirm with a toast. Invalid input shows the codec's error message instead.
 
 ## Install locally
 

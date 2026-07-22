@@ -56,6 +56,20 @@
           "required": true
         }
       ]
+    },
+    {
+      "name": "generate-uuid-v4",
+      "title": "Generate UUID V4",
+      "subtitle": "UUID",
+      "description": "Generate a random UUID v4.",
+      "mode": "view"
+    },
+    {
+      "name": "generate-uuid-v7",
+      "title": "Generate UUID V7",
+      "subtitle": "UUID",
+      "description": "Generate a time-ordered UUID v7.",
+      "mode": "view"
     }
   ],
   "dependencies": {
