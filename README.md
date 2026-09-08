@@ -22,7 +22,7 @@ This is a private, unpublished extension — run it in Raycast's development mod
 **Prerequisites:** [Raycast](https://raycast.com), Node ≥ 22, `pnpm`, and npm auth for the `@redenvelopeorg` GitHub Packages scope (a `~/.npmrc` with a `//npm.pkg.github.com/:_authToken=…` line).
 
 ```bash
-git clone git@github.com:redenvelopeorg/readable-id-raycast.git
+git clone git@github.com:redsasha/readable-id-raycast.git
 cd readable-id-raycast
 pnpm install
 pnpm dev        # builds and loads the extension into Raycast (Raycast must be running)
