@@ -15,8 +15,8 @@ importers:
         specifier: ^1.19.0
         version: 1.19.1(@raycast/api@1.104.23(@types/node@22.20.1)(@types/react@19.2.17))
       '@redenvelopeorg/utils':
-        specifier: ^1.105.0
-        version: 1.106.2(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/logger@1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.106.2)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
+        specifier: 1.133.0
+        version: 1.133.0(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/logger@1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.133.0)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
     devDependencies:
       '@raycast/eslint-config':
         specifier: ^2.0.0
@@ -761,31 +761,31 @@ packages:
     peerDependencies:
       '@raycast/api': '>=1.69.0'
 
-  '@redenvelopeorg/constants@1.106.2':
-    resolution: {integrity: sha512-SNARP28vqIhYB9LYDXjn86E0wVlqEev7WUuTftpMCseH2tyRrWu4BbKzB+iUofMMFYtZiyfY9d2ZLaI17tH3XQ==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/constants/1.106.2/d51013248f0aa1ee5276c5e063d6363c8f369cac}
+  '@redenvelopeorg/constants@1.133.0':
+    resolution: {integrity: sha512-Xg0PhzaWwRrNKII92N6JKqUNmyU2Mu0N2P6qlfvkCdUxGBgfx6FGJY0L2xcKsVv/jgjonpzSoTgvTJ2iaI4d5A==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/constants/1.133.0/03f42cfaa8538dea4496c212e02c80b9e343ceb1}
 
-  '@redenvelopeorg/db@1.106.2':
-    resolution: {integrity: sha512-mmC8czVnnYeYPCCM90+oWXEnifpplN5fOcXOY7Fb023EgMjSM28QHwQNKInDpy06Z0uBE1DXt9OOxOgZXQpKYg==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/db/1.106.2/cee8ffe9f702cccde484e954d229e9b4c2976612}
+  '@redenvelopeorg/db@1.133.0':
+    resolution: {integrity: sha512-sDcshW3S64GLrwRXWKVpzRLjBKls0mNfcb1k6rEuJcLNddzrZae6v0xaVtbzXhK9gGyxkJ1FmkrRts3uFsYp6w==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/db/1.133.0/cff54a47bc2545bd6b03da951b5a3809c4b9b2a0}
     peerDependencies:
-      '@redenvelopeorg/constants': 1.106.2
-      '@redenvelopeorg/utils': 1.106.2
+      '@redenvelopeorg/constants': 1.133.0
+      '@redenvelopeorg/utils': 1.133.0
 
-  '@redenvelopeorg/logger@1.106.2':
-    resolution: {integrity: sha512-P5txjgYsh77LCl3nWfRBWGyGE6U9X1iG5hIPN1nrxqd0UFMujFhqrqmdLXSHlv4J46tbCAiBEcUh2yIuKtvEDw==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/logger/1.106.2/703b13aa920b5a9e0ecc834673a76d5d2b7f393c}
+  '@redenvelopeorg/logger@1.133.0':
+    resolution: {integrity: sha512-2OsAp+N/F54po9M509rYcpbw7Nb8PIPO2jWsO2/Zl3e5ingWw62+4F27Rslomz5wNUmWFVcOkF/foUIN/+vDkQ==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/logger/1.133.0/3f0a29fa2f1f4733d4432c0b5cddf752e39009b1}
     peerDependencies:
       '@nestjs/common': ^10.0.0 || ^11.0.0
       '@opentelemetry/api': ^1.9.0
       dd-trace: ^5.32.0
       hono: ^4.0.0
 
-  '@redenvelopeorg/sdk@1.106.2':
-    resolution: {integrity: sha512-5dmPabpNOog84zQHx48Zpb5LXnP3SkEPNd8JoOjhSaDIt4mVsJ2ggNAlOvwUP6kcn0DX1VDVw2LoYJaze1En4g==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/sdk/1.106.2/13ac8a744d4fcf65c8e3ea43940614ba581d34a9}
+  '@redenvelopeorg/sdk@1.133.0':
+    resolution: {integrity: sha512-yNYgOdu6dSUoiYW9cgrod1fY4fNElUKvHjCaEYzJ3gSv3Ie84x/UtQVKlH6CSjGxsiCxAX6x7IrmRlLP3/6D6Q==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/sdk/1.133.0/221218dfe87aa4bc814d7e420f53455d9db60b6d}
     peerDependencies:
-      '@redenvelopeorg/db': 1.106.2
-      '@redenvelopeorg/utils': 1.106.2
+      '@redenvelopeorg/db': 1.133.0
+      '@redenvelopeorg/utils': 1.133.0
 
-  '@redenvelopeorg/utils@1.106.2':
-    resolution: {integrity: sha512-fYXOmbtiLNmaxp7fKwchjZ5Xuj8Kcf3uOe6E9vUzeT18S6PNteK6KEjI2W4jDGe1XJdlSUPpuD4Xh0ihTyGTqw==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/utils/1.106.2/9a4645ecdc2250760e51c35039fe6a61bab266b2}
+  '@redenvelopeorg/utils@1.133.0':
+    resolution: {integrity: sha512-LDxznyKd0xshudyiYw/2A7U7Yk1HCLj0l1uZbthN29qXofQTmUFRrfaaT3IVT2RoOauba5rUQ1WrETisoq8GZA==, tarball: https://npm.pkg.github.com/download/@redenvelopeorg/utils/1.133.0/2af7cba8761d9d43a3b75974e37cf8ff8bf4797e}
     peerDependencies:
       '@aws-sdk/client-dynamodb': ^3.974.0
       '@aws-sdk/client-kinesis': ^3.974.0
@@ -793,9 +793,9 @@ packages:
       '@aws-sdk/client-ses': ^3.974.0
       '@aws-sdk/s3-request-presigner': ^3.974.0
       '@aws-sdk/util-dynamodb': ^3.974.0
-      '@redenvelopeorg/db': 1.106.2
-      '@redenvelopeorg/logger': 1.106.2
-      '@redenvelopeorg/sdk': 1.106.2
+      '@redenvelopeorg/db': 1.133.0
+      '@redenvelopeorg/logger': 1.133.0
+      '@redenvelopeorg/sdk': 1.133.0
       '@scure/base': ^1.2.6
       '@ua-parser-js/pro-enterprise': 2.0.3
       bignumber.js: ^9.1.2
@@ -2509,14 +2509,14 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@redenvelopeorg/constants@1.106.2': {}
+  '@redenvelopeorg/constants@1.133.0': {}
 
-  '@redenvelopeorg/db@1.106.2(@redenvelopeorg/constants@1.106.2)(@redenvelopeorg/utils@1.106.2)':
+  '@redenvelopeorg/db@1.133.0(@redenvelopeorg/constants@1.133.0)(@redenvelopeorg/utils@1.133.0)':
     dependencies:
-      '@redenvelopeorg/constants': 1.106.2
-      '@redenvelopeorg/utils': 1.106.2(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/logger@1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.106.2)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
+      '@redenvelopeorg/constants': 1.133.0
+      '@redenvelopeorg/utils': 1.133.0(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/logger@1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.133.0)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
 
-  '@redenvelopeorg/logger@1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30)':
+  '@redenvelopeorg/logger@1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30)':
     dependencies:
       '@nestjs/common': 11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@opentelemetry/api': 1.9.1
@@ -2525,10 +2525,10 @@ snapshots:
       pino: 9.14.0
       safe-stable-stringify: 2.5.0
 
-  '@redenvelopeorg/sdk@1.106.2(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/utils@1.106.2)':
+  '@redenvelopeorg/sdk@1.133.0(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/utils@1.133.0)':
     dependencies:
-      '@redenvelopeorg/db': 1.106.2(@redenvelopeorg/constants@1.106.2)(@redenvelopeorg/utils@1.106.2)
-      '@redenvelopeorg/utils': 1.106.2(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/logger@1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.106.2)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
+      '@redenvelopeorg/db': 1.133.0(@redenvelopeorg/constants@1.133.0)(@redenvelopeorg/utils@1.133.0)
+      '@redenvelopeorg/utils': 1.133.0(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/logger@1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.133.0)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)
       bignumber.js: 9.3.1
       class-transformer: 0.5.1
       class-validator: 0.14.1
@@ -2536,7 +2536,7 @@ snapshots:
       reflect-metadata: 0.2.2
       validator: 13.11.0
 
-  '@redenvelopeorg/utils@1.106.2(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/logger@1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.106.2)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)':
+  '@redenvelopeorg/utils@1.133.0(@aws-sdk/client-dynamodb@3.1090.0)(@aws-sdk/client-kinesis@3.1090.0)(@aws-sdk/client-s3@3.1090.0)(@aws-sdk/client-ses@3.1090.0)(@aws-sdk/s3-request-presigner@3.1090.0)(@aws-sdk/util-dynamodb@3.996.7(@aws-sdk/client-dynamodb@3.1090.0))(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/logger@1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30))(@redenvelopeorg/sdk@1.133.0)(@scure/base@1.2.6)(@ua-parser-js/pro-enterprise@2.0.3)(bignumber.js@9.3.1)(casbin@5.51.1)(dayjs@1.11.21)(superstruct@1.0.4)(uuid@11.0.2)':
     dependencies:
       '@aws-sdk/client-dynamodb': 3.1090.0
       '@aws-sdk/client-kinesis': 3.1090.0
@@ -2544,9 +2544,9 @@ snapshots:
       '@aws-sdk/client-ses': 3.1090.0
       '@aws-sdk/s3-request-presigner': 3.1090.0
       '@aws-sdk/util-dynamodb': 3.996.7(@aws-sdk/client-dynamodb@3.1090.0)
-      '@redenvelopeorg/db': 1.106.2(@redenvelopeorg/constants@1.106.2)(@redenvelopeorg/utils@1.106.2)
-      '@redenvelopeorg/logger': 1.106.2(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30)
-      '@redenvelopeorg/sdk': 1.106.2(@redenvelopeorg/db@1.106.2)(@redenvelopeorg/utils@1.106.2)
+      '@redenvelopeorg/db': 1.133.0(@redenvelopeorg/constants@1.133.0)(@redenvelopeorg/utils@1.133.0)
+      '@redenvelopeorg/logger': 1.133.0(@nestjs/common@11.1.28(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@opentelemetry/api@1.9.1)(dd-trace@5.115.0(@openfeature/server-sdk@1.22.0(@openfeature/core@1.11.0)))(hono@4.12.30)
+      '@redenvelopeorg/sdk': 1.133.0(@redenvelopeorg/db@1.133.0)(@redenvelopeorg/utils@1.133.0)
       '@scure/base': 1.2.6
       '@ua-parser-js/pro-enterprise': 2.0.3
       bignumber.js: 9.3.1
